@@ -63,11 +63,11 @@
     <!-- Navigation -->
     <nav class="bg-white py-8">
         <div class="max-w-7xl mx-auto px-8">
-            <ul class="flex justify-center gap-12 text-sm">
+            <ul class="flex justify-center gap-12 text-base">
                 <li>
                     <a href="#" class="text-gray-900 font-medium relative pb-2 font-urbanist">
                         Home
-                        <span class="absolute bottom-0 left-0 right-0 h-0.5 bg-blue-500"></span>
+                        <span class="absolute bottom-0 left-0 right-0 h-0.5 bg-primary-purple"></span>
                     </a>
                 </li>
                 <li><a href="#" class="text-gray-400 hover:text-gray-600 pb-2 font-urbanist transition-colors">Currículo</a></li>
@@ -80,7 +80,10 @@
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-8 py-12">
         <!-- Profile Section -->
-        <section class="text-center mb-24">
+        <section class="text-center mb-24 relative">
+            <!-- Decorative SVG in top right -->
+            <img src="assets/svg/decorative-2.svg" alt="" class="absolute top-0 right-20 w-16 h-16 opacity-40 float-rotate-animation" />
+            
             <!-- Greeting -->
             <div class="mb-8">
                 <span class="inline-block text-gray-600 text-base font-light px-4 py-2 border border-gray-200 rounded-full bg-white font-urbanist">
@@ -90,17 +93,17 @@
             </div>
 
             <!-- Main Heading -->
-            <div class="mb-6">
+            <div class="mb-6 relative">
                 <h1 class="text-5xl md:text-6xl font-normal mb-3 font-urbanist">
                     Sou <span class="text-primary-purple">Débora</span>,
                 </h1>
                 <h2 class="text-4xl md:text-5xl font-bold font-urbanist">Designer UX/UI</h2>
+                <!-- Hook SVG below Designer -->
+                <img src="assets/svg/hook.svg" alt="" class="absolute -bottom-8 left-1/2 transform -translate-x-1/2 w-20 h-10 opacity-40 wave-animation" />
             </div>
 
-            <!-- Decorative SVG -->
-            <div class="relative h-12 mb-6">
-                <img src="assets/svg/decorative-1.svg" alt="" class="absolute left-1/2 transform -translate-x-1/2 w-20 h-10 opacity-50 wave-animation" />
-            </div>
+            <!-- Extra space for hook SVG -->
+            <div class="h-12"></div>
 
             <!-- Subtitle -->
             <p class="text-gray-600 text-lg font-light">Apaixonada por criar soluções</p>
@@ -129,25 +132,15 @@
                     Meus trabalhos
                     <sup class="text-primary-purple text-lg font-normal ml-1">(+)</sup>
                 </h3>
-                <img src="assets/svg/decorative-2.svg" alt="" class="mx-auto w-24 h-12 opacity-40" />
+                <img src="assets/svg/decorative-3.svg" alt="" class="mx-auto w-12 h-12 opacity-40" />
             </div>
 
             <!-- Projects Grid -->
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <!-- JuMP Project -->
-                <div class="bg-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
-                    <div class="bg-blue-brand p-8 h-72 relative">
-                        <div class="text-white">
-                            <p class="text-xs uppercase tracking-wider mb-2 opacity-90">Dashboard</p>
-                            <div class="flex items-center gap-2">
-                                <h4 class="text-2xl font-bold font-urbanist">JuMP</h4>
-                                <span class="text-yellow-400 text-xl">⭐</span>
-                            </div>
-                        </div>
-                        <!-- Dashboard preview image -->
-                        <div class="absolute bottom-6 left-6 right-6 bg-white rounded-lg p-2 shadow-lg">
-                            <img src="assets/images/jump-dashboard.png" alt="JuMP Dashboard" class="w-full h-32 object-cover rounded" onerror="this.style.display='none'" />
-                        </div>
+                <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+                    <div class="p-6 h-64 flex items-center justify-center">
+                        <img src="assets/images/profile2.png" alt="JuMP Project" class="w-full h-full object-cover rounded-lg" />
                     </div>
                     <div class="p-5 flex gap-2">
                         <span class="px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">Desktop</span>
@@ -156,38 +149,17 @@
                 </div>
 
                 <!-- PetMatch Project -->
-                <div class="bg-gradient-to-br from-orange-50 to-white rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden">
-                    <div class="p-8 h-72 relative">
-                        <div class="flex justify-between items-start mb-4">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 bg-orange-brand rounded-full flex items-center justify-center">
-                                    <span class="text-white text-lg">🐾</span>
-                                </div>
-                                <h4 class="text-xl font-bold text-orange-brand font-urbanist">PetMatch</h4>
-                            </div>
-                            <div>
-                                <p class="text-xs text-gray-400 text-right mb-1">58</p>
-                                <div class="flex gap-0.5">
-                                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
-                                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
-                                    <span class="w-1 h-1 bg-gray-300 rounded-full"></span>
-                                </div>
-                            </div>
+                <a href="petmatch.html" class="block">
+                    <div class="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden cursor-pointer">
+                        <div class="p-6 h-64 flex items-center justify-center">
+                            <img src="assets/images/profile.png" alt="PetMatch Project" class="w-full h-full object-cover rounded-lg" />
                         </div>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                            Conexão de amizade e<br/>romance entre cachorros
-                        </p>
-                        <!-- App mockup images -->
-                        <div class="absolute bottom-4 right-4 flex">
-                            <img src="assets/images/petmatch-app1.png" alt="PetMatch App" class="w-24 h-40 object-cover rounded-lg shadow-md -rotate-6" onerror="this.style.display='none'" />
-                            <img src="assets/images/petmatch-app2.png" alt="PetMatch App" class="w-24 h-40 object-cover rounded-lg shadow-md rotate-6 -ml-8" onerror="this.style.display='none'" />
+                        <div class="p-5 flex gap-2">
+                            <span class="px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">Mobile</span>
+                            <span class="px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">Case UI</span>
                         </div>
                     </div>
-                    <div class="px-8 pb-5 flex gap-2">
-                        <span class="px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">Mobile</span>
-                        <span class="px-4 py-1.5 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">Case UI</span>
-                    </div>
-                </div>
+                </a>
             </div>
         </section>
 
@@ -207,7 +179,8 @@
                     </p>
                     <p class="text-gray-700 leading-relaxed">
                         Descobri minha verdadeira paixão pelo UX/UI Design durante meu período de um ano e 
-                        meio na Citi Empresa Júnior. E fora do trabalho, você pode me encontrar na natação, explorando feirinhas de rua ou, invariavelmente, comendo pela cidade.
+                        meio na Citi Empresa Júnior. É fora da caixa, vocês pode me encontrar criando, jogando, 
+                        explorando cantinhos da rua ou - inovativamente - comendo pela cidade.
                     </p>
                 </div>
 

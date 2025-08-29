@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetMatch - Débora UX/UI Designer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-purple': '#9A6FFF',
+                        'light-purple': '#E4D7FF',
+                        'orange-brand': '#FF6B35',
+                        'orange-light': '#FFE4D6',
+                        'peach-bg': '#FFDCC3',
+                        'dark-bg': '#0F0F0F'
+                    },
+                    fontFamily: {
+                        'urbanist': ['Urbanist', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-inter">
+    <!-- Navigation -->
+    <nav class="bg-white py-8 relative z-10">
+        <div class="max-w-7xl mx-auto px-8">
+            <ul class="flex justify-center gap-12 text-base">
+                <li>
+                    <a href="index.html" class="text-gray-400 hover:text-gray-600 pb-2 font-urbanist transition-colors">Home</a>
+                </li>
+                <li><a href="#" class="text-gray-400 hover:text-gray-600 pb-2 font-urbanist transition-colors">Currículo</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-gray-600 pb-2 font-urbanist transition-colors">E-mail</a></li>
+                <li><a href="#" class="text-gray-400 hover:text-gray-600 pb-2 font-urbanist transition-colors">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-orange-light via-peach-bg to-orange-light min-h-screen relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 py-16">
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Left Content -->
+                <div class="pt-12">
+                    <!-- Logo and Title -->
+                    <div class="flex items-center gap-4 mb-12">
+                        <div class="w-20 h-20 bg-white rounded-2xl shadow-lg flex items-center justify-center">
+                            <svg class="w-12 h-12" viewBox="0 0 48 48" fill="none">
+                                <path d="M24 38C24 38 36 32 36 24C36 20 33 18 30 18C28 18 26 19 24 21C22 19 20 18 18 18C15 18 12 20 12 24C12 32 24 38 24 38Z" fill="#FF6B35"/>
+                                <circle cx="20" cy="26" r="2" fill="white"/>
+                                <circle cx="28" cy="26" r="2" fill="white"/>
+                                <path d="M18 32C18 32 20 34 24 34C28 34 30 32 30 32" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M16 14L14 10" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M32 14L34 10" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h1 class="text-5xl font-bold font-urbanist">PetMatch</h1>
+                    </div>
+
+                    <!-- Project Info -->
+                    <div class="space-y-4 text-lg">
+                        <div>
+                            <span class="font-medium">Período:</span> 2024
+                        </div>
+                        <div>
+                            <span class="font-medium">Equipe:</span> UX/UI Designers
+                        </div>
+                        <div>
+                            <span class="font-medium">Papel:</span> UX/UI Designer –<br/>
+                            Responsável pelo projeto
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - App Mockups -->
+                <div class="relative h-[600px] flex items-center justify-center">
+                    <!-- Main Phone Mockup -->
+                    <div class="absolute z-30 transform rotate-3">
+                        <div class="w-64 h-[520px] bg-gray-900 rounded-[40px] p-3 shadow-2xl">
+                            <div class="w-full h-full bg-gradient-to-b from-orange-400 to-orange-600 rounded-[32px] p-4 relative overflow-hidden">
+                                <!-- Phone Content -->
+                                <div class="bg-white/10 rounded-2xl p-3 mb-4">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-white text-xs">Catatau, 5 anos</span>
+                                        <span class="text-white text-xs">Golden Retriever 🐕</span>
+                                    </div>
+                                </div>
+                                <div class="absolute bottom-20 left-4 right-4">
+                                    <img src="assets/images/dog1.jpg" alt="Dog" class="w-full h-48 object-cover rounded-2xl" onerror="this.style.backgroundColor='#FFB385'" />
+                                    <p class="text-white text-center mt-3 text-sm">Clique na foto<br/>para ver detalhes</p>
+                                </div>
+                                <!-- Action Buttons -->
+                                <div class="absolute bottom-4 left-0 right-0 flex justify-center gap-4">
+                                    <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
+                                        <span class="text-xl">👈</span>
+                                    </button>
+                                    <button class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg">
+                                        <span class="text-xl">❤️</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Secondary Screens -->
+                    <div class="absolute z-20 -left-10 top-0 transform -rotate-6 scale-90">
+                        <div class="w-56 h-[450px] bg-white rounded-[30px] shadow-xl p-4">
+                            <div class="text-center mb-4">
+                                <p class="font-bold text-lg">Mensagens</p>
+                            </div>
+                            <div class="space-y-3">
+                                <div class="flex items-center gap-3 p-2 bg-gray-50 rounded-xl">
+                                    <div class="w-10 h-10 bg-orange-200 rounded-full"></div>
+                                    <div class="flex-1">
+                                        <p class="text-sm font-medium">Felipe Dias</p>
+                                        <p class="text-xs text-gray-500">Tutor de Veloso</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-6">
+                                <p class="text-center text-sm text-gray-500">Matches recentes</p>
+                                <div class="flex justify-center gap-2 mt-3">
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full"></div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full"></div>
+                                    <div class="w-12 h-12 bg-orange-100 rounded-full"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute z-10 -right-10 bottom-10 transform rotate-6 scale-90">
+                        <div class="w-56 h-[450px] bg-gray-800 rounded-[30px] shadow-xl p-4">
+                            <div class="text-white text-center mb-4">
+                                <p class="text-sm mb-2">Oba 🎉</p>
+                                <p class="font-bold">Você tem um Match!</p>
+                            </div>
+                            <div class="grid grid-cols-2 gap-2 mt-4">
+                                <div class="bg-white/20 rounded-xl h-32"></div>
+                                <div class="bg-white/20 rounded-xl h-32"></div>
+                            </div>
+                            <button class="w-full bg-orange-500 text-white py-3 rounded-full mt-6 font-medium">
+                                Conversar com Catatau
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Registration Screen -->
+                    <div class="absolute z-5 right-20 top-10 transform -rotate-3 scale-75">
+                        <div class="w-56 h-[400px] bg-white rounded-[30px] shadow-lg p-6">
+                            <h3 class="font-bold text-lg mb-4">Cadastro pet</h3>
+                            <div class="space-y-3">
+                                <div>
+                                    <label class="text-xs text-gray-500">Sexo do animal</label>
+                                    <div class="flex gap-2 mt-1">
+                                        <button class="px-4 py-2 bg-gray-100 rounded-lg text-sm">Fêmea</button>
+                                        <button class="px-4 py-2 bg-orange-100 rounded-lg text-sm">Macho</button>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="text-xs text-gray-500">Selecione a porta do animal</label>
+                                    <div class="grid grid-cols-3 gap-1 mt-1">
+                                        <div class="h-16 bg-gray-100 rounded-lg"></div>
+                                        <div class="h-16 bg-orange-100 rounded-lg"></div>
+                                        <div class="h-16 bg-gray-100 rounded-lg"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Description Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-8">
+            <h2 class="text-3xl font-bold mb-8 font-urbanist">Sobre o Projeto</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                O PetMatch é um aplicativo inovador que conecta pets para amizade e romance. 
+                Desenvolvido com foco na experiência do usuário, o app permite que tutores 
+                encontrem companheiros ideais para seus animais de estimação.
+            </p>
+            <p class="text-gray-700 leading-relaxed">
+                O projeto foi desenvolvido em 2024 com uma equipe de designers UX/UI, 
+                onde fui responsável por todo o processo de design, desde a pesquisa 
+                inicial até os protótipos finais de alta fidelidade.
+            </p>
+        </div>
+    </section>
+
+    <!-- Back to Home -->
+    <div class="text-center py-8">
+        <a href="index.html" class="inline-flex items-center gap-2 text-gray-600 hover:text-orange-brand transition-colors">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+            Voltar para Home
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white py-8 border-t">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-center gap-3">
+                <a href="#" class="w-8 h-8 bg-gray-900 rounded flex items-center justify-center hover:bg-gray-700 transition-colors">
+                    <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
+                        <circle cx="12" cy="12" r="4"/>
+                        <circle cx="18.5" cy="5.5" r="1.5"/>
+                    </svg>
+                </a>
+                <a href="#" class="w-8 h-8 bg-gray-900 rounded flex items-center justify-center hover:bg-gray-700 transition-colors">
+                    <span class="text-white text-xs font-bold">in</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
